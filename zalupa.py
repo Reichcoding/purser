@@ -47,7 +47,7 @@ def parse():
 			html = getHtml(URL,parm={"page":page})
 			shops.extend(getCont(html.text))
 		print(len(shops))
-		f = open("хуйня.html","w",encoding='utf-8')
+		f = open("penis.html","w",encoding='utf-8')
 		f.write("<table border=\"1\">")
 		for item in shops:
 			f.write(f"<tr><td>{str(item['title'])}</td><td><strong>{str(item['price'])}тг.</strong></td><td><a href=\"{str(item['href'])}\">ССЫЛКА</a></td></tr>")
